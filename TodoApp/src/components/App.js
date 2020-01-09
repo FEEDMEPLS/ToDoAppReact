@@ -5,13 +5,10 @@ import Form from './Form';
 import List from './List';
 
 class App extends Component {
-
-
-
+  
     state = {
       inputValue: '',
       todos: []
-
     }
      
     handleChange = (evt) => {
@@ -38,7 +35,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1> Things I definetly have to do... </h1>
+        <h1> "Things I definetly have to do..."</h1>
         <Form 
           handleChange={this.handleChange}
           inputValue={this.state.inputValue}
